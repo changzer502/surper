@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: a - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/a.res" /d "_DEBUG" /d "_AFXDLL" "E:\学习\super\图像处理实验\a.rc"" 
+Creating temporary file "C:\Users\neiko\AppData\Local\Temp\RSP426A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/a.pdb" /debug /machine:I386 /out:"Debug/a.exe" /pdbtype:sept 
+".\Debug\a.obj"
+".\Debug\aDoc.obj"
+".\Debug\aView.obj"
+".\Debug\DIBAPI.OBJ"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\suanfa.obj"
+".\Debug\a.res"
+]
+Creating command line "link.exe @C:\Users\neiko\AppData\Local\Temp\RSP426A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+a.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
