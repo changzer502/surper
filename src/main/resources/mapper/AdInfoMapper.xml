@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.subway.ad.mapper.AdInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.subway.ad.entity.AdInfo">
+            <id property="adId" column="ad_id" jdbcType="BIGINT"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="DECIMAL"/>
+            <result property="des" column="des" jdbcType="VARCHAR"/>
+            <result property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="ingredient" column="Ingredient" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ad_id,title,price,
+        des,user_id,Ingredient
+    </sql>
+    <select id="selectPages" resultType="com.subway.ad.entity.AdInfo">
+        select * from ad_info limit ${pageNum}, ${pageSize}
+    </select>
+</mapper>

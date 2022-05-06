@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CloudBOX | Responsive Bootstrap 4 Admin Dashboard Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="front/images/logo1.png"/>
+
+    <link rel="stylesheet" href="front/css/backend.min.css">
+    <link rel="stylesheet" href="front/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="front/vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="front/vendor/remixicon/fonts/remixicon.css">
+
+    <!-- Viewer Plugin -->
+    <!--PDF-->
+    <link rel="stylesheet" href="front/vendor/doc-viewer/include/pdf/pdf.viewer.css">
+    <!--Docs-->
+    <!--PPTX-->
+    <link rel="stylesheet" href="front/vendor/doc-viewer/include/PPTXjs/css/pptxjs.css">
+    <link rel="stylesheet" href="front/vendor/doc-viewer/include/PPTXjs/css/nv.d3.min.css">
+    <!--All Spreadsheet -->
+    <link rel="stylesheet" href="front/vendor/doc-viewer/include/SheetJS/handsontable.full.min.css">
+    <!--Image viewer-->
+    <link rel="stylesheet"
+          href="front/vendor/doc-viewer/include/verySimpleImageViewer/css/jquery.verySimpleImageViewer.css">
+    <!--officeToHtml-->
+    <link rel="stylesheet" href="front/vendor/doc-viewer/include/officeToHtml/officeToHtml.css">
+</head>
+<body class="  ">
+    <p th:text="${name}">昵称：</p>
+    <p th:text="${openId}">openId：</p>
+    <p th:text="${imgUrl}">头像：</p>
+    <p th:text="${gender}">性别：</p>
+    <img th:src="${imgUrl}">
+</body>
+</html>
